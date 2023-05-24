@@ -22,12 +22,17 @@ public class JsTest : MonoBehaviour
     [DllImport("__Internal")]
     private static extern void BindWebGLTexture(int texture);
 
+    public void onClick() {
+        Hello();
+    }
+
     // スタート時に呼ばれる
     void Start()
     {
         // 関数呼び出し
-        Hello();
+        // Hello();
 
+        /*
         // 数値型の引数と戻り値
         int result = AddNumbers(5, 7);
         Debug.Log(result);
@@ -45,5 +50,6 @@ public class JsTest : MonoBehaviour
         // WebGLテクスチャのバインド
         var texture = new Texture2D(0, 0, TextureFormat.ARGB32, false);
         BindWebGLTexture(texture.GetNativeTextureID());
+        */
     }
 }

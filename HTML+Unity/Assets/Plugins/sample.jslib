@@ -1,7 +1,10 @@
 mergeInto(LibraryManager.library, {
   // 関数呼び出し
   Hello: function () {
-    window.alert('Hello, world!')
+    // window.alert('Hello, world!')
+    console.log(window, window.HTMLFunction)
+    if (window.HTMLFunction !== undefined) {window.HTMLFunction() }
+    else { console.log("HTMLFunctionないね") }
   },
 
   // 数値型の引数と戻り値
